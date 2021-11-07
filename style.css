@@ -1,0 +1,90 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+}
+table{
+    width: 470px;
+    height: 450px;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border-radius: 10px 10px 0 0;
+}
+
+.days-of-the-week tr{
+    background-color: #fd7dff;
+}
+
+.top{
+    height: 50px;
+    position: relative;
+}
+
+.days{
+    height: 50px;
+}
+
+.thead{
+    color:rgb(255,255,255);
+    border-radius: 1%;
+    text-align: center;
+    width: 20.25%;
+    font-size: 300%;
+}
+
+input{
+    position: absolute;
+    visibility: hidden;
+}
+
+.month{
+    position: absolute;
+    z-index: 9999999999;
+    top:10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+label{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0,0,0);
+    display:inline-block;
+    width: 64px;
+    height: 60px;
+}
+
+label:hover, #i2 + label:hover,#i3 + label:hover,#i9 + label:hover,#i10 + label:hover,#i16 + label:hover,#i17 + label:hover,#i23 + label:hover,#i24 + label:hover,#i30 + label:hover,#i31 + label:hover{
+    background-color: #e3e1e3;
+}
+
+td{
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    background-color: #fcd7fc;
+    color:rgb(80, 79, 79);
+   text-align: center;
+}
+
+th{
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.last-line{
+    margin-bottom: 10px;
+    background: black;
+}
+
+input:checked + label, #i2:checked + label,#i3:checked + label,#i9:checked + label,#i10:checked + label,#i16:checked + label,#i17:checked + label,#i23:checked + label,#i24:checked + label,#i30:checked + label,#i31:checked + label {
+    color: rgb(255,255,255);
+    background-color: #a08fa1;
+}
+
+#i2 + label,#i3 + label,#i9 + label,#i10 + label,#i16 + label,#i17 + label,#i23 + label,#i24 + label,#i30 + label,#i31 + label{
+    background-color: #d940db;
+    color:white;
+}
